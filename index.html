@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <!-- <div class="halfweb"> -->
+    <img src="pxfuel.jpg" alt="Khabib">
+    <!-- </div> -->
+
+    <div class="halfWeb">
+    <!-- <h1>A temporary Visual look for my future UFC Website!</h1> -->
+    <form action="thiswillchange.com" method="post">
+
+    <fieldset>
+        <legend>Please Fill Out Sign-Up Form</legend>
+        <div class="formRow">
+        <div class="formCol">
+            <label for="username">*Username </label>
+            <div>
+                <input type="text" id="username" name="username" placeholder="YonteMoon" minlength="3" maxlength="20" title="Please enter a username between the characters of 3 and 20" required>
+            </div>
+        </div>
+
+        <div class="formCol">
+            <label for="email">*Email </label>
+            <div>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" title="Please enter a valid email address" required>
+            </div>
+        </div>
+        </div>
+        <div class="formRow">
+        <div class="formCol">
+            <label for="password">*Password </label>
+
+        <div>
+            <input type="password" id="password" name="password" minlength="8" maxlength="20" title="Please enter a password between 8 to 20 characters" required>
+        </div>
+    </div>
+        <div class="formCol">
+            <label for="confirmPassword">*Confirm Password </label>
+
+        <div>
+            <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" maxlength="20" title="The password must be the same" required>
+        </div> 
+    </div> 
+    </div>
+    <div class="formRow">
+        <div>
+            <label for="date">*Date of Birth </label>
+        
+        <div>
+            <input type="date" id="date" name="date" required>
+        </div>
+        </div>
+        <button id="submitBut" type="submit">Submit</button>
+
+    </fieldset>  
+
+    </form>
+    <p>Already have an account? Log In</p> 
+</div>
+</body>
+</html>
