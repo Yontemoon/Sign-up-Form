@@ -9,24 +9,23 @@
     <script src="javascript.js"></script>
 </head>
 <body>
-    <!-- <div class="halfweb"> -->
-    <img src="pxfuel.jpg" alt="Khabib">
-    <!-- </div> -->
-
+    <div id="leftWeb">
+        <img src="UFC-Logo-PNG-Picture.png" id="ufcLogo" alt="UFCLOGO">
+    </div>
     <div class="halfWeb">
-    <!-- <h1>A temporary Visual look for my future UFC Website!</h1> -->
-    <form action="thiswillchange.com" method="post">
-
-    <fieldset>
-        <legend>Please Fill Out Sign-Up Form</legend>
-        <div class="formRow">
-        <div class="formCol">
+        <h1 class="tempHeader">A temporary Visual look for my future UFC Website!</h1>
+        <h2>Additional Filler that will take up a little more space so the website doesn't look like complete shit.</h2>
+        <h3>More filler because I am not creative enough to add more stuff.</h3>
+        <form action="thiswillchange.com" method="post">
+        <fieldset>
+            <legend>Please Fill Out Sign-Up Form</legend>
+            <div class="formRow">
+            <div class="formCol">
             <label for="username">*Username </label>
             <div>
                 <input type="text" id="username" name="username" placeholder="YonteMoon" minlength="3" maxlength="20" title="Please enter a username between the characters of 3 and 20" required>
             </div>
-        </div>
-
+            </div>
         <div class="formCol">
             <label for="email">*Email </label>
             <div>
@@ -39,30 +38,31 @@
             <label for="password">*Password </label>
 
         <div>
-            <input type="password" id="password" name="password" minlength="8" maxlength="20" title="Please enter a password between 8 to 20 characters" required>
+            <input type="password" id="password" name="password" placeholder = "********" minlength="8" maxlength="20" title="Please enter a password between 8 to 20 characters" required>
         </div>
     </div>
         <div class="formCol">
             <label for="confirmPassword">*Confirm Password </label>
 
         <div>
-            <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" maxlength="20" title="The password must be the same" required>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder = "********" minlength="8" maxlength="20" title="The password must be the same" required>
         </div> 
     </div> 
     </div>
     <div class="formRow">
-        <div>
+        <div class="formCol">
             <label for="date">*Date of Birth </label>
         
         <div>
             <input type="date" id="date" name="date" required>
         </div>
         </div>
-        <button id="submitBut" type="submit">Submit</button>
 
+        <button id="submitBut" type="submit">Sign Up</button>
     </fieldset>  
 
-    </form>
+    </form>    
+
     <p>Already have an account? Log In</p> 
 </div>
 </body>

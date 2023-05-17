@@ -2,37 +2,79 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
+    color: white;
     display: flex;
+    margin: 0px;
+    /* overflow: hidden; */
+    background-color: rgb(99, 99, 99);
 }
 .formRow {
     display: flex;
 }
 
-img {
-    max-width: 700px;
+#leftWeb {
+    position: relative;
+    width: 700px;
+    height: 990px;
+    background-position: center;
+    background-image: url(pxfuel.jpg);
+    background-size: cover;
 }
+
+#ufcLogo {
+    width: 200px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.halfWeb {
+    margin-left: 40px;
+    position: relative;
+    top: 50px;
+    height:fit-content;
+
+}
+
+
 input {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
-    border-color: black;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 3px;
-    border-width: 2px;
     height: 25px;
+    width: 200px;
+    background-color: rgb(99, 99, 99);
+    color: white;
 }
 
-input:valid {
-    background-color: rgb(154, 216, 103);
-    border-color: rgb(78, 156, 14);
+::placeholder {
+    color: white;
+}
 
+input:focus {
+    background-color: rgb(171, 208, 224);
 }
 input:invalid {
-    border-color: red;
+    box-shadow: 0 0 5px 1px red;
+
 }
+input:valid {
+    box-shadow:0 0 5px 1 px rgb(72, 161, 72);
+}
+
 
 form {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+}
+
+label {
+    padding: 3px;
 }
 
 .formCol {
@@ -41,7 +83,15 @@ form {
 }
 
 #submitBut {
-    background-color: rgb(26, 189, 26);
+    background-color: rgb(58, 61, 58);
     color:white;
-    
+    width: 80px;
+    height: 40px;
+    position: relative;
+    margin-top: 15px;
+    /* left: 37px; */
+    border: none;
+    font-weight: bold;
+    border-radius: 3px;;
 }
+
