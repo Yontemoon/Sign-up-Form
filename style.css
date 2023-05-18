@@ -1,12 +1,15 @@
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     color: white;
     display: flex;
     margin: 0px;
-    /* overflow: hidden; */
-    background-color: rgb(99, 99, 99);
+    background-color: rgb(70, 69, 69);
+}
+
+.sideBorder {
+    width:200px;
+    background-color: rgb(129, 129, 129);
 }
 .formRow {
     display: flex;
@@ -21,34 +24,44 @@ body {
     background-size: cover;
 }
 
+#logo {
+    background-color: black;
+    opacity: 0.5;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 30%;
+}
+
 #ufcLogo {
     width: 200px;
     display: flex;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
     margin: auto;
+
 }
 
 .halfWeb {
     margin-left: 40px;
     position: relative;
-    top: 50px;
+    top: 150px;
     height:fit-content;
-
+ 
 }
 
+#form {
+    flex-direction: column;
+}
 
 input {
     font-size: 16px;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 3px;
     height: 25px;
-    width: 200px;
+    width: 400px;
     background-color: rgb(99, 99, 99);
     color: white;
+    margin-top: 5px;
 }
 
 ::placeholder {
@@ -56,21 +69,24 @@ input {
 }
 
 input:focus {
-    background-color: rgb(171, 208, 224);
+    box-shadow: 0 0 5px 1px rgb(104, 151, 221);
 }
 input:invalid {
-    box-shadow: 0 0 5px 1px red;
+    box-shadow: 0 0 5px 1px rgb(206, 49, 49);
 
 }
 input:valid {
-    box-shadow:0 0 5px 1 px rgb(72, 161, 72);
+    box-shadow: 0 0 5px 1px rgb(72, 161, 72);
 }
 
 
 form {
     display: flex;
     /* justify-content: center; */
-    align-items: center;
+    /* align-items: center; */
+}
+fieldset {
+    border: none;
 }
 
 label {
@@ -83,15 +99,37 @@ label {
 }
 
 #submitBut {
-    background-color: rgb(58, 61, 58);
-    color:white;
-    width: 80px;
+    background-color: rgb(70, 69, 69);
+    color:rgb(56, 124, 180);
+    width: 160px;
     height: 40px;
     position: relative;
-    margin-top: 15px;
-    /* left: 37px; */
-    border: none;
+    left: 30px;
+    /* margin-top: 15px; */
+    border: 2px solid rgb(56, 124, 180);
     font-weight: bold;
+    font-size: 20px;
     border-radius: 3px;;
 }
 
+#submitBut:hover {
+    background-color: rgb(56, 124, 180);
+    color:white;
+    transition: 0.1s;
+}
+
+#submitBut:active {
+    background-color: rgb(15, 78, 129);
+    border: 2px solid rgb(15, 78, 129);
+}
+
+#logIn {
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+
+#logInLink {
+    color: rgb(56, 124, 180);
+    font-weight: bold;
+}
